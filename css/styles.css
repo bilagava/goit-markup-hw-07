@@ -877,9 +877,9 @@ img{
 /*-----------2-------------- */
 
 .check-input{
-    appearance: none;
-    
+    appearance: none;  
 }
+
 .check-text {
     font-size: 14px;
     color: var(--main-text-color);
@@ -897,6 +897,10 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.check-input:focus + .check-text .check-item  {
+    border: 2px solid var(--accent-color);
 }
 
 .contract{
