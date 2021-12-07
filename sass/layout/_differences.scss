@@ -1,0 +1,37 @@
+.differences-list{
+    display: flex;
+    justify-content: center;
+}
+
+.differences-item +.differences-item{
+    margin-left: 30px;
+}
+/* .differences-item:not(:last-child){
+    margin-right: 30px;} */
+
+.differences-link{
+    display: flex;
+    padding: 25px 100px;
+    /* width: 270px; */
+    background: var(--third-background);
+    border-radius: 4px;   
+}
+
+.differences-title{ 
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.differences-after-title{
+    width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
