@@ -51,7 +51,6 @@
     }
 }
 
-
 .modal-title{
     font-weight: 700;
     font-size: 20px;
@@ -92,6 +91,9 @@
     &:focus{
         fill: var(--accent-color);
     }
+    .form-data-input:hover + &,.form-data-input:focus + &{
+        fill: var(--accent-color);
+    }
 }
 
 .form-data-input{
@@ -108,10 +110,6 @@
     &:focus{
         border: 1px solid var(--accent-color);
         outline: none;
-    }
-    &:hover + .form-data-icon,
-    &:focus + .form-data-icon{
-        fill: var(--accent-color);
     }
 }
 
@@ -170,17 +168,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .check-input:focus + .check-text &  {
+        border: 2px solid var(--accent-color);
+    }
+    .check-input:checked + .check-text & {
+        background-color: var(--accent-color);
+        border: transparent;
+    }
 }
 
 .check-input{
     appearance: none;
-    &:focus + .check-text .check-item  {
-        border: 2px solid var(--accent-color);
-    }
-    &:checked + .check-text .check-item {
-        background-color: var(--accent-color);
-        border: transparent;
-    }
 }
 
 .check-icon {

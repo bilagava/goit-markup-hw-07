@@ -178,6 +178,10 @@ img {
   fill: var(--accent-color);
 }
 
+.form-data-input:hover + .form-data-icon, .form-data-input:focus + .form-data-icon {
+  fill: var(--accent-color);
+}
+
 .form-data-input {
   margin-top: 4px;
   padding-left: 42px;
@@ -193,11 +197,6 @@ img {
 .form-data-input:hover, .form-data-input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
-}
-
-.form-data-input:hover + .form-data-icon,
-.form-data-input:focus + .form-data-icon {
-  fill: var(--accent-color);
 }
 
 .comment {
@@ -258,10 +257,6 @@ img {
   justify-content: center;
 }
 
-.check-input {
-  appearance: none;
-}
-
 .check-input:focus + .check-text .check-item {
   border: 2px solid var(--accent-color);
 }
@@ -269,6 +264,10 @@ img {
 .check-input:checked + .check-text .check-item {
   background-color: var(--accent-color);
   border: transparent;
+}
+
+.check-input {
+  appearance: none;
 }
 
 .check-icon {
@@ -591,7 +590,6 @@ img {
 .command-social-link {
   width: 100%;
   height: 100%;
-  /* background-color: tomato; */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -783,7 +781,6 @@ img {
 
 .footer-mailing-form {
   display: flex;
-  /* margin-left: 93px; */
 }
 
 .footer-mail-input {
