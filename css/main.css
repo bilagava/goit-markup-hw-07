@@ -565,6 +565,10 @@ img {
   margin-bottom: 16px;
 }
 
+.social-list__link--grey {
+  color: var(--main-social-color);
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -586,7 +590,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-social-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -719,7 +722,8 @@ img {
   text-transform: uppercase;
 }
 
-.social-list__link__footer {
+.social-list__link-wheit {
+  color: var(--sekond-social-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
